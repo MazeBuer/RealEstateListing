@@ -52,7 +52,7 @@
             <h4>Directions</h4>
             <p> | </p>
         </div>
-        <div>
+        <div class="pDirections">
             <p>From the 191 exit off Venice Blvd headed south, turn left on Allington then right on Henderson.</p>
         </div>
     </section>
@@ -60,42 +60,44 @@
     <section class="gallery">
         <a id="aboutpg">
         <div class="container">
-            <div>
-                <img src="" alt="listing">
-            </div>
-            <div>
-                <h3>About the Property</h3>
-                <div>
+            <section class="firstLinePhoto">
+                <div class="firstImg">
+                    <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                </div>
+                <div class="aboutProp">
+                    <h3>About the Property</h3>
                     <p>2 Bed | 1 Bath | 849sqft</p>
                     <p>$650,000</p>
+                    <p>Check out this lovely 2 bedroom home located in the beautiful city of Belmont, CA. Right down the street from a High School. You'll love it here! Lots of backyard room and potential. Detached garage at the end of the drive way.</p>
                 </div>
-                <p>Check out this lovely 2 bedroom home located in the beautiful city of Belmont, CA. Right down the street from a High School. You'll love it here! Lots of backyard room and potential. Detached garage at the end of the drive way.</p>
-            </div>
-            <div>
-                <img src="" alt="listing">
-            </div>
-            <div>
-                <img src="" alt="listing">
-            </div>
-            <div>
-                <img src="" alt="listing">
-            </div>
-            <div>
-                <img src="" alt="listing">
-            </div>
-            <div>
-                <img src="" alt="listing">
-            </div>
-            <div>
-                <img src="" alt="listing">
-            </div>
+            </section>
+            <section class="pics">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560185127-bc36ce01f6e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="listing">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560449752-3fd4bdbe7df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560184897-0e5d96d86acd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                </div>
+            </section>
         </div>
         </a>
     </section>
 
     <section class="appointment">
         <a id="viewingpg">
-
+            <h5>MLS</h5>
         </a>
     </section>
     
@@ -110,20 +112,43 @@
    </section>
    
    <section class="contact">
-        <div>
+        <div class="contactInfo">
             <div class="email">
-                <p>FontAwesome email</p>
+                <i class="fa-solid fa-envelope"></i>
                 <h6>Email</h6>
                 <p>Email@email.com</p>
             </div>
             <div class="phone">
-                <p>FontAWesome phone</p>
+                <i class="fa-solid fa-phone"></i>
                 <h6>Phone</h6>
                 <p>(800)561-8534</p>
             </div>
         </div>
-        <div>
-            <form>
+        <div class="formInfo">
+            <form action="mailto:lucifermorningstar@kw.com" name="contact" method="POST" data-netlify="true">
+                <div class="inputGroup inputGroup1">
+                  <input class="inputGroup__textfield" type="text" name="Firstname" value="" placeholder="Firstname*" required data-value-missing="Please fill out this field.">
+                </div>
+        
+                <div class="inputGroup inputGroup2">
+                  <input class="inputGroup__textfield" type="text" name="Lastname" value="" placeholder="Lastname*" required data-value-missing="Please fill out this field.">
+                </div>
+        
+                <div class="inputGroup inputGroup3">
+                  <input class="inputGroup__textfield" type="email" name="Email" value="" placeholder="Email*" required data-value-missing="Please fill out this field.">
+                </div>
+        
+                <div class="inputGroup inputGroup4">
+                  <input class="inputGroup__textfield" type="tel" name="Phone" value="" placeholder="Phone*" required data-value-missing="Please fill out this field.">
+                </div>
+        
+                <div class="inputGroup inputGroup6">
+                  <textarea class="inputGroup__textfield" name="name" rows="8" placeholder="How can we help?*" required data-value-missing="Please fill out this field."></textarea>
+                </div>
+        
+                <div class="inputGroup inputGroup7">
+                  <button type="submit" name="button">Send</button>
+                </div>
             </form>
         </div>
    </section>
@@ -136,7 +161,7 @@
             <p>800-451-5456</p>
         </div>
         <div>
-            <p>Copyright &copy; 2022 All rights reserved | Mazikeen Buer</p>
+            <p class="copyright">Copyright &copy; 2022 All rights reserved | Mazikeen Buer</p>
         </div>
    </footer>
 

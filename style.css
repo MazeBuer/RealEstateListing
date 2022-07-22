@@ -80,6 +80,12 @@ main {
     text-underline-offset: 2rem;
 }
 
+@media screen and (max-width: 450px) {
+    .available h1 {
+        text-underline-offset: .5rem;
+    }
+}
+
 .available h4 {
     font-size: 1.3rem;
 }
@@ -98,6 +104,24 @@ main {
     padding-top: 16rem;
     color: white;
     text-shadow: 1px 1px black;
+}
+@media screen and (max-width: 400px) {
+    
+    .coverPic {
+        width: 500px;
+        height: 500px;
+        background: cover;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+
+
+    /* .coverPic {
+        display: flex;
+        justify-content:flex-start;
+        padding-top: 0;
+    } */
 }
 
 .coverPic h2 {
@@ -131,4 +155,263 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    .cursiveDir h4 {
+        font-size: 4rem;
+    }
+    .directions p {
+        font-size: 2.5rem;
+    }
+    .pDirections {
+        padding-left: 2rem;
+    }
+}
+/* GALLERY */
+.gallery {
+    padding-top: 10rem;
+}
+.firstLinePhoto {
+    display: flex;
+}
+
+.firstLinePhoto div {
+    width: 50%;
+    text-align: center;
+}
+
+.firstLinePhoto img {
+    width: 80%;
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pics div {
+    width: 30%;
+    padding: 2rem 10rem;
+}
+
+.pics img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .firstLinePhoto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .firstLinePhoto .aboutProp, .firstLinePhoto .firstImg {
+        width: 100%;
+    }
+
+    .pics div {
+        width: 100%;
+    }
+
+    .aboutProp p{
+        font-size: 2.5rem;
+    }
+    .aboutProp h3 {
+        font-size: 3rem;
+    }
+}
+
+/* MLS / APPOINTMENTS */
+
+.appointment {
+    text-align: center;
+}
+
+/* CONNECT and FORM */
+
+.connect {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.connect p, .connect h3 {
+    padding: 0.4rem 0;
+}
+
+.connect h3 {
+    font-size: 2rem;
+}
+
+.contact {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.contactInfo, .formInfo {
+    width: 50%;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    color: gray;
+    font-size: 1rem;
+}
+/* FORM */
+.contactForm {
+    width: calc(100% - 20px);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* STYLES FOR FORM */
+form {
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    padding-top: 20px;
+}
+
+.inputGroup {
+    width: 100%;
+    position: relative;
+}
+
+  .inputGroup1 {
+      grid-column: 1;
+      grid-row: 1;
+  }
+  .inputGroup2 {
+      grid-column: 2;
+      grid-row: 1;
+  }
+  .inputGroup3 {
+      grid-column: 1;
+      grid-row: 2;
+  }
+  .inputGroup4 {
+      grid-column: 2;
+      grid-row: 2;
+  }
+  .inputGroup5 {
+      grid-column: 1 / span 2;
+      grid-row: 3;
+  }
+  .inputGroup6 {
+      grid-column: 1 / span 2;
+      grid-row: 4;
+  }
+  .inputGroup7 {
+      grid-column: 2;
+      grid-row: 5;
+      text-align: right;
+  }
+
+
+.inputGroup__textfield {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    font-size: 13px;
+    padding: 20px;
+    border: 1px solid #D9D9D9;
+    outline: 0;
+    border-radius: 0;
+    transition: border 0.3s ease-in-out;
+
+}
+  .inputGroup__textfield:focus, .inputGroup__textfield:active {
+      border: 1px solid #D9D9D9;
+  }
+
+
+button {
+    padding: 20px;
+    width: 50%;
+    border: 0;
+    background: #000;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+  button:hover {
+      box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+  }
+
+
+/* STYLES FOR VALIDATION WARNING */
+.hf-warning {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    transform: translate(-15%, -50%) !important;
+    background: orangered !important;
+    display: inline-block !important;
+    padding: 7px 14px !important;
+    color: #FFFFFF !important;
+    font-size: 11px !important;
+    font-family: sans-serif;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1) !important;
+    border: 0 !important;
+    border-radius: 2px !important;
+}
+
+  .hf-warning:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: orangered;
+      position: absolute;
+      z-index: 1;
+      bottom: -5px;
+      right: 15px;
+      transform: rotate(45deg);
+  }
+
+
+@media screen and (max-width: 700px) {
+    form {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+
+    form > div {
+      margin-bottom: 30px;
+    }
+    .contactInfo, .formInfo {
+        width: 100%;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* FOOTEr */
+footer {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+footer p, footer h5 {
+    padding-top: 0.5rem;
+}
+footer h5 {
+    font-size: 2rem;
+}
+footer p {
+    font-size: 1.3rem;
+}
+
+.copyright {
+    padding: 8rem 0 5rem 0;
+    font-size: 0.9rem;
 }

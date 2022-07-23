@@ -79,9 +79,9 @@ nav {
     color: black;
     text-decoration-color: var(--main-clr);
     font-size: 22px;
-    font-family: "Playfair Display", serif;
-    font-weight: 100;
-    font-weight:0px 3px var(--main-clr)
+    font-family: Raleway, 'sans-serif';
+    font-weight: bold;
+
   }
   
   

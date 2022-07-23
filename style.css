@@ -23,7 +23,7 @@ img{
 
 /* Header */
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     background: #fff;
@@ -32,16 +32,16 @@ header {
     left: 0;
     width: 100%;
     z-index: 999px;
-    /* box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); */
-}
+    /* box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
+} */
 
-ul {
+/* ul {
     display: flex;
     justify-content: space-around;
 }
 
 header div {
-    width: 50%;
+    width: 50vw;
     text-transform: uppercase;
 }
 
@@ -53,16 +53,156 @@ li {
 a {
     text-decoration: none;
     color: black;
-}
+} */
 
 a:hover {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-
+/*
 header div h4 {
     padding-left: 40px;
-}
+} */
+
+/* HAMBUERGER CODE */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: var(--nav-shadow);
+  }
+  
+  nav .logo {
+    color: black;
+    text-decoration-color: var(--main-clr);
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-weight:0px 3px var(--main-clr)
+  }
+  
+  
+  nav ul {
+    --padding: 20px;
+    --font-size: 17px;
+  
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size);
+    overflow-y: hidden;
+    transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
+    box-shadow: var(--nav-shadow);
+  }
+  
+  nav ul li {
+    padding: var(--padding);
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 1.7px;
+    border-radius: 99px;
+    background: var(--main-clr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav .menu {
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px;
+  }
+  
+  nav .menu span {
+    width: 100%;
+    height: 2px;
+    border-radius: 99px;
+    background: black;
+    transition: 0.3s ease;
+    transform-origin: left;
+  }
+  
+  nav .menu.active span {
+    background: var(--main-clr);
+  }
+  
+  nav .menu.active span:nth-child(1) {
+    transform: rotate(40deg);
+  }
+  
+  nav .menu span:nth-child(3) {
+    transform-origin: left;
+  }
+  
+  nav .menu.active span:nth-child(3) {
+    transform: rotate(-40deg);
+  }
+  
+  nav .menu.active span:nth-child(2) {
+    transform: scale(0);
+  }
+  
+  @media (max-width: 910px) {
+    nav .menu {
+      display: flex;
+    }
+  
+    nav ul {
+      --height: 0px;
+  
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 56px;
+      height: var(--height);
+      transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    nav ul.active {
+      --height: calc(
+        (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+      );
+      /*   (Block Level Padding + The Font Size) * The Number of Children   */
+      
+      
+      transition: 1s ease;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+    nav ul li a {
+      width: 100%;
+      text-transform: capitalize;
+    }
+  }
+
+
 
 /* MAIN */
 
@@ -80,7 +220,7 @@ main {
     text-underline-offset: 2rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 910px) {
     .available h1 {
         text-underline-offset: .5rem;
     }
@@ -96,7 +236,7 @@ main {
 }
 
 .coverPic {
-    background:url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+    background: center / cover  no-repeat url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     width: 90%;
     height: 50rem;
     display: flex;
@@ -105,7 +245,7 @@ main {
     color: white;
     text-shadow: 1px 1px black;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 910px) {
     
     .coverPic {
         width: 500px;
@@ -134,10 +274,10 @@ main {
 /* DIRECTIONS */
 
 .directions div {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .cursiveDir h4 {
@@ -157,7 +297,7 @@ main {
     align-items: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 910px) {
     .cursiveDir h4 {
         font-size: 4rem;
     }
@@ -182,7 +322,8 @@ main {
 }
 
 .firstLinePhoto img {
-    width: 80%;
+    width: 90%;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .pics {
@@ -192,15 +333,24 @@ main {
 }
 
 .pics div {
-    width: 30%;
+    width: 49%;
     padding: 2rem 10rem;
 }
 
 .pics img {
     width: 100%;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 800px) {
+.aboutProp h3 {
+    font-size: 2rem;
+}
+
+.aboutProp p {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 900px) {
     .firstLinePhoto {
         display: flex;
         flex-wrap: wrap;
@@ -212,7 +362,9 @@ main {
     .pics div {
         width: 100%;
     }
-
+    .pics img {
+        width: 90vw;  /*USE VW and VH */
+    }
     .aboutProp p{
         font-size: 2.5rem;
     }
@@ -221,10 +373,15 @@ main {
     }
 }
 
+/* CAROUSEL */
+
+
+
 /* MLS / APPOINTMENTS */
 
 .appointment {
     text-align: center;
+    padding-top: 15vh;
 }
 
 /* CONNECT and FORM */
@@ -239,7 +396,7 @@ main {
 }
 
 .connect h3 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .contact {
@@ -256,8 +413,16 @@ main {
     justify-content: space-around;
     align-items:center;
     color: gray;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
+
+@media screen and (max-width: 900px) {
+    .connect p, .connect h3 {
+        font-size: 3rem;
+    }
+}
+
+
 /* FORM */
 .contactForm {
     width: calc(100% - 20px);
@@ -375,7 +540,7 @@ button {
   }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     form {
       display: flex !important;
       flex-wrap: wrap;
@@ -415,3 +580,6 @@ footer p {
     padding: 8rem 0 5rem 0;
     font-size: 0.9rem;
 }
+
+/* Carousel */
+

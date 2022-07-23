@@ -11,23 +11,29 @@
     
     <script src="https://kit.fontawesome.com/a44ac01a42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.scss">
     <title>Home for Sale</title>
 </head>
 <body>
     <header>
-        <div>
-            <h4>Name</h4>
-        </div>
-        <div>
             <nav>
-                <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#aboutpg">Property</a></li>
-                    <li><a href="#viewingpg">Viewing Appointment</a></li>
-                    <li><a href="#contactpg">Contact</a></li>
-                </ul>
+                <div>
+                    <h4 class="logo">Name</h4>
+                </div>
+                <div>
+                    <ul id="nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#aboutpg">Property</a></li>
+                        <li><a href="#viewingpg">Viewing Appointment</a></li>
+                        <li><a href="#contactpg">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu" id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
-        </div>
     </header>
 
 
@@ -62,8 +68,10 @@
         <div class="container">
             <section class="firstLinePhoto">
                 <div class="firstImg">
-                    <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                    <img src="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                 </div>
+
+
                 <div class="aboutProp">
                     <h3>About the Property</h3>
                     <p>2 Bed | 1 Bath | 849sqft</p>
@@ -71,40 +79,83 @@
                     <p>Check out this lovely 2 bedroom home located in the beautiful city of Belmont, CA. Right down the street from a High School. You'll love it here! Lots of backyard room and potential. Detached garage at the end of the drive way.</p>
                 </div>
             </section>
+
+
+
+
             <section class="pics">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                    <img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1560185127-bc36ce01f6e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="listing">
+                    <img src="https://images.unsplash.com/photo-1588471980726-8346cb477a33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1070&q=80">
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1560449752-3fd4bdbe7df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                    <img src="https://images.unsplash.com/photo-1550223026-0d6fd780c560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1560184897-0e5d96d86acd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="listing">
+                    <img src="https://images.unsplash.com/photo-1630699294288-3bc2ae7bf361?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1157&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/flagged/photo-1573168710865-2e4c680d921a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1432303492674-642e9d0944b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1600488999585-e4364713b90a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/5997996/pexels-photo-5997996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                 </div>
             </section>
         </div>
         </a>
     </section>
 
+<!-- CAROUSEL -->
+
+
+
+<!-- MLS -->
     <section class="appointment">
         <a id="viewingpg">
-            <h5>MLS</h5>
+            <div>
+                <h2>Schedule a Viewing Appointment</h2>
+                <p>Can't make the Open House? Make an appointment for a tour during the week</p>
+            </div>
+            <div>
+            <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/mazebuer" style="min-width:320px;height:630px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+            </div>
         </a>
     </section>
-    
+
+
+    <!-- CONNECT -->
    <section class="connect">
         <a id="contactpg">
         <div>
-            <p>Let's Connect</p>
             <h3>Contact</h3>
             <p>Have any questions? Fill the form below with your inquiry</p>
         </div>
@@ -165,6 +216,6 @@
         </div>
    </footer>
 
-
+   <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

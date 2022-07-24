@@ -333,11 +333,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 8rem 0;
 }
 
 .pics div {
-    width: 49%;
-    padding: 2rem 10rem;
+    width: 49vw;
+    padding: 2rem 0rem;
 }
 
 .pics img {
